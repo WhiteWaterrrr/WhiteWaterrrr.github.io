@@ -46,7 +46,7 @@ kubeadm join 192.168.XXX.XXX:6443 --token 6509w1.4nu34gycu80kl4h5 \
 ```
 systemctl start docker
 ```
-再重启之后可能会遇到问题，执行以下操作查看各个pod的运行情况
+重启之后可能会遇到问题，执行以下操作查看各个pod的运行情况
 ```
 kubectl get pods --all-namespaces -o wide
 ```
