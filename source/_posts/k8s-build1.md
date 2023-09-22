@@ -42,6 +42,10 @@ kubeadm join 192.168.XXX.XXX:6443 --token 6509w1.4nu34gycu80kl4h5 \
 验证时，如果没有图形化界面，可以通过本机浏览器去访问虚拟机ip。
 
 ## 重启
+重启之后需要重新运行docker
+```
+systemctl start docker
+```
 再重启之后可能会遇到问题，执行以下操作查看各个pod的运行情况
 ```
 kubectl get pods --all-namespaces -o wide
