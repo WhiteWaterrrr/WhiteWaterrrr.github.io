@@ -40,3 +40,13 @@ kubeadm join 192.168.XXX.XXX:6443 --token 6509w1.4nu34gycu80kl4h5 \
 
 ## 验证
 验证时，如果没有图形化界面，可以通过本机浏览器去访问虚拟机ip。
+
+## 重启
+再重启之后可能会遇到问题，执行以下操作查看各个pod的运行情况
+```
+kubectl get pods --all-namespaces -o wide
+```
+如果要将node重新join入集群，需要现在master上面重新获取有效的令牌，使用以下语句生成join命令
+```
+kubeadm token create --print-join-command
+```
