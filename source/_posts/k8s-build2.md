@@ -17,7 +17,7 @@ categories:
 - 使用内网ip+iptable对数据进行转发
 - 创建虚拟网卡，配置flannel
 
-## 1.内网ip+iptable
+## 内网ip+iptable
 实验[参考](https://blog.csdn.net/qq_43285879/article/details/120794910#:~:text=%E4%B8%80%E4%B8%AAk8s%E9%9B%86%E7%BE%A4%E2%80%94%E2%80%94%E8%B7%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2%201%201%E3%80%81%E5%AE%89%E8%A3%85Docker%20sudo%20yum%20remove%20docker%2A%20sudo,Bash%E5%A4%8D%E5%88%B6%E4%BB%A3%E7%A0%81%20%23%20%E5%9C%A8%E6%AF%8F%E4%B8%AA%E6%9C%BA%E5%99%A8%E3%80%82%20yum%20install%20-y%20nfs-utils%20)
 #### 实验结果
 ```bash
@@ -41,7 +41,7 @@ k8s-node1    Ready      <none>                 16s     v1.20.9
 curl https://docs.projectcalico.org/archive/v3.20/manifests/calico.yaml -O
 ```
 
-## 2.创建虚拟网卡，配置flannel
+## 创建虚拟网卡，配置flannel
 实验[参考](https://blog.csdn.net/weixin_43988498/article/details/122639595)
 
 # 未完待续
