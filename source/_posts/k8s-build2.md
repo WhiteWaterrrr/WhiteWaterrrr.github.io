@@ -1,7 +1,11 @@
 ---
 title: K8S集群搭建-跨云跨VPC
 date: 2023-09-25 20:08:51
-tags: K8S
+tags: 
+    - K8S
+cover: ..//img//k8s-build2//top.png
+categories:
+    - 跨域资源管理
 ---
 
 本文描述了如何使用不同云厂商的服务器搭建K8S集群，供下次再次搭建集群时参考！
