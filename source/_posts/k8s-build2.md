@@ -27,9 +27,18 @@ categories:
 2. 操作系统：CentOS7.6
 3. Dokcer版本：20.10.7（具体查看[参考](https://blog.51cto.com/xiaowangzai/5167661)）
 4. K8S版本：1.20.9
-### 教程过程修正
+5. 云服务安全组端口设定3
+
+|协议|端口|作用|
+|---|---|---|
+|TCP|10250/10260|给kube-schedule、kube-controll，kube-proxy、kubelet等使用|
+|TCP|6443|给kube-apiserver使用|
+|TCP|2379/2380/2381|ETCD使用|
+|UDP|8472 |vxlan使用端口|
 
 ***
+### 教程修正
+
 1. 在调整内核参数时，需要增加这一语句
 ```bash
 cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
@@ -55,7 +64,7 @@ kubectl expose deployment nginx --port=80 --type=NodePort
 kubectl get pod,svc
 ```
 之后你便可以在浏览器上进行访问，`<公网ip>:3xxxx`，若出现以下界面，则跨云搭建K8S集群成功。
-![实验结果](..\\img\\k8s-build2\\r.png)
+![实验结果](/source/img/k8s-build2/r.png)
 
 ## 内网ip+iptable
 实验[参考](https://blog.csdn.net/qq_43285879/article/details/120794910#:~:text=%E4%B8%80%E4%B8%AAk8s%E9%9B%86%E7%BE%A4%E2%80%94%E2%80%94%E8%B7%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2%201%201%E3%80%81%E5%AE%89%E8%A3%85Docker%20sudo%20yum%20remove%20docker%2A%20sudo,Bash%E5%A4%8D%E5%88%B6%E4%BB%A3%E7%A0%81%20%23%20%E5%9C%A8%E6%AF%8F%E4%B8%AA%E6%9C%BA%E5%99%A8%E3%80%82%20yum%20install%20-y%20nfs-utils%20)
