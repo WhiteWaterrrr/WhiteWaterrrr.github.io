@@ -284,7 +284,7 @@ kubectl patch storageclass course-nfs-storage -p '{"metadata": {"annotations":{"
 # 查看storageclass，有default字样
 kubectl get storageclass
 ```
-![查看storageclass](.\kubesphere-build1\1.png)
+![查看storageclass](./kubesphere-build1/1.png)
 
 ### 配置metrics-server
 参考[链接](https://www.cnblogs.com/vipsoft/p/16896510.html)
@@ -335,4 +335,4 @@ kubectl get svc/ks-console -n kubesphere-system
 ### 通过Web进行访问
 请确保服务器的30880可以访问<br>
 默认帐户和密码`admin` `P@88w0rd`
-![实验结果](.\kubesphere-build1\2.png)
+![实验结果](./kubesphere-build1/2.png)
