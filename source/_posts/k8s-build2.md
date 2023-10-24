@@ -5,7 +5,7 @@ tags:
     - K8S
 cover: ..//img//k8s-build2//top.png
 categories:
-    - 跨域资源管理
+    - 环境搭建
 ---
 
 本文描述了如何使用不同云厂商的服务器搭建K8S集群，供下次再次搭建集群时参考！
