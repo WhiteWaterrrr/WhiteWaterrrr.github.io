@@ -6,7 +6,7 @@ tags:
     - K8S
 cover: ..//img//kubesphere-build1//top.png
 categories:
-    - 跨域资源管理
+    - 环境搭建
 ---
 本文描述了如何使用本地虚拟机搭建K8S以及kubesphere。
 ## 实验环境

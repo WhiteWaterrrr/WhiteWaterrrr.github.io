@@ -1,11 +1,11 @@
 ---
-title: slurm-build1
+title: slurm集群搭建
 date: 2023-10-23 22:02:17
 tags:
     - slurm
 cover: ..//img//slurm-build1//top.png
 categories:
-    - 跨域资源管理
+    - 环境搭建
 ---
 本文描述了如何搭建slurm集群！
 
